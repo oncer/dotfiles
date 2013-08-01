@@ -3,6 +3,6 @@ colorscheme desert
 set guifont=Terminus\ 16
 set guioptions-=m
 set guioptions-=T
-set sw=4
-set sts=4
-set expandtab
+
+autocmd FileType cpp source ~/.vim/cpp.vim
+autocmd FileType py  source ~/.vim/py.vim
