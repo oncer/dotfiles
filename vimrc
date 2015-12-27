@@ -27,3 +27,7 @@ set cinoptions=g0
 source ~/.vim/ctags.vim
 let generate_tags=1
 let g:ctags_statusline=1
+
+" filetype specific config
+autocmd FileType cpp source ~/.vim/cpp.vim
+autocmd FileType py  source ~/.vim/py.vim
