@@ -4,3 +4,15 @@
 [submodule "vim/bundle/lh-vim-lib"]
 	path = vim/bundle/lh-vim-lib
 	url = https://github.com/LucHermitte/lh-vim-lib.git
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/bundle/table-mode"]
+	path = vim/bundle/bundle/table-mode
+	url = git@github.com:dhruvasagar/vim-table-mode.git
+[submodule "vim/bundle/vim-table-mode"]
+	path = vim/bundle/vim-table-mode
+	url = git@github.com:dhruvasagar/vim-table-mode.git
+[submodule "vim/bundle/jedi-vim"]
+	path = vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git

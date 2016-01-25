@@ -31,3 +31,10 @@ let g:ctags_statusline=1
 " filetype specific config
 autocmd FileType cpp source ~/.vim/cpp.vim
 autocmd FileType py  source ~/.vim/py.vim
+autocmd FileType wiki source ~/.vim/wiki.vim
+
+" YCM
+let g:ycm_filetype_specific_completion_to_disable = {
+			\ 'cs': 1
+			\}
+
