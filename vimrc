@@ -24,9 +24,13 @@ set cindent
 set cinoptions=g0
 
 " CTags script
-source ~/.vim/ctags.vim
-let generate_tags=1
-let g:ctags_statusline=1
+"source ~/.vim/ctags.vim
+"let generate_tags=1
+"let g:ctags_statusline=1
+
+let g:airline#extensions#tagbar#enabled = 1
+set laststatus=2
+let g:airline_powerline_fonts=1
 
 " filetype specific config
 autocmd FileType cpp source ~/.vim/cpp.vim
