@@ -1,0 +1,4 @@
+gnome-do &
+conky
+setxkbmap de
+pulseaudio --start

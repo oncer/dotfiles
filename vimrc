@@ -31,6 +31,7 @@ set cinoptions=g0
 let g:airline#extensions#tagbar#enabled = 1
 set laststatus=2
 let g:airline_powerline_fonts=1
+let g:airline_theme="wombat"
 
 " filetype specific config
 autocmd FileType cpp source ~/.vim/cpp.vim
@@ -39,6 +40,9 @@ autocmd FileType wiki source ~/.vim/wiki.vim
 
 " YCM
 let g:ycm_filetype_specific_completion_to_disable = {
-			\ 'cs': 1
+			\ 'cs': 1,
 			\}
+let g:ycm_filepath_completion_use_working_dir = 1
 
+" CTRLP
+set wildignore+="*/build/*"
