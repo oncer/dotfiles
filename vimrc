@@ -4,6 +4,9 @@ filetype plugin on
 
 set modeline
 
+" Bell
+set noerrorbells visualbell t_vb=
+
 " File types
 au BufNewFile,BufRead *.as set filetype=actionscript
 
@@ -37,6 +40,8 @@ let g:airline_theme="wombat"
 autocmd FileType cpp source ~/.vim/cpp.vim
 autocmd FileType py  source ~/.vim/py.vim
 autocmd FileType wiki source ~/.vim/wiki.vim
+autocmd FileType jade source ~/.vim/jade.vim
+autocmd FileType haxe source ~/.vim/haxe.vim
 
 " YCM
 let g:ycm_filetype_specific_completion_to_disable = {
