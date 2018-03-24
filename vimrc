@@ -4,6 +4,9 @@ filetype plugin on
 
 set modeline
 
+" Bell
+set noerrorbells visualbell t_vb=
+
 " File types
 au BufNewFile,BufRead *.as set filetype=actionscript
 
@@ -40,6 +43,8 @@ let g:airline_theme="wombat"
 autocmd FileType cpp source ~/.vim/cpp.vim
 autocmd FileType py  source ~/.vim/py.vim
 autocmd FileType wiki source ~/.vim/wiki.vim
+autocmd FileType jade source ~/.vim/jade.vim
+autocmd FileType haxe source ~/.vim/haxe.vim
 autocmd FileType text source ~/.vim/txt.vim
 autocmd FileType javascript source ~/.vim/javascript.vim
 
@@ -48,9 +53,9 @@ let g:ycm_filetype_specific_completion_to_disable = {
 			\ 'cs': 1,
 			\}
 let g:ycm_filepath_completion_use_working_dir = 1
-let g:ycm_server_python_interpreter = '/usr/bin/python2'
 
 " CTRLP
+set wildignore+="*/build/*"
 let g:ctrlp_custom_ignore = {
 			\ 'dir': '\v[\/](\.git|\.hg|\.svn|build|win32)$',
 			\ 'file': '\v\.(exe|so|dll|zip|png|wav|o)$',
