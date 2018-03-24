@@ -19,6 +19,9 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 " Pathogen
 execute pathogen#infect()
 
+" Do not put two spaces after punctuation marks
+set nojoinspaces
+
 " Indent
 set cindent
 set cinoptions=g0
@@ -37,12 +40,18 @@ let g:airline_theme="wombat"
 autocmd FileType cpp source ~/.vim/cpp.vim
 autocmd FileType py  source ~/.vim/py.vim
 autocmd FileType wiki source ~/.vim/wiki.vim
+autocmd FileType text source ~/.vim/txt.vim
+autocmd FileType javascript source ~/.vim/javascript.vim
 
 " YCM
 let g:ycm_filetype_specific_completion_to_disable = {
 			\ 'cs': 1,
 			\}
 let g:ycm_filepath_completion_use_working_dir = 1
+let g:ycm_server_python_interpreter = '/usr/bin/python2'
 
 " CTRLP
-set wildignore+="*/build/*"
+let g:ctrlp_custom_ignore = {
+			\ 'dir': '\v[\/](\.git|\.hg|\.svn|build|win32)$',
+			\ 'file': '\v\.(exe|so|dll|zip|png|wav|o)$',
+			\ }
