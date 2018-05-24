@@ -53,6 +53,7 @@ let g:ycm_filetype_specific_completion_to_disable = {
 			\ 'cs': 1,
 			\}
 let g:ycm_filepath_completion_use_working_dir = 1
+let g:ycm_server_python_interpreter = "/usr/bin/python2"
 
 " CTRLP
 set wildignore+="*/build/*"

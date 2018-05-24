@@ -164,6 +164,8 @@ for_window [instance="^chromium$"] border none
 for_window [class="^Firefox$"] border none
 for_window [instance="^file_progress$"] floating enable
 for_window [instance="^sun-awt-X11-XFramePeer$"] floating enable
+for_window [title="^Project X$"] move container to workspace 5, workspace 5, move workspace to output DVI-D-0
 
 exec setxkbmap de
-
+exec compton --config ~/.config/compton.conf -b
+exec ~/.fehbg
