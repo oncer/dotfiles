@@ -1,3 +1,5 @@
+Rxvt.font:           -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+Rxvt.scrollBar:      false
 ! yellow dark/light
 *color3:             #edd400
 *color11:            #ecd93f
