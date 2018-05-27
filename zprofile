@@ -1,1 +1,5 @@
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+export XKB_DEFAULT_LAYOUT=de,us
+export XKB_DEFAULT_OPTIONS=grp:alt_shift_toggle
+
+eval $(dircolors .config/dircolors)
+xrdb ~/.Xresources
