@@ -34,3 +34,30 @@
 [submodule "vim/bundle/vaxe"]
 	path = vim/bundle/vaxe
 	url = https://github.com/jdonaldson/vaxe.git
+[submodule "vim/bundle/lh-tags"]
+	path = vim/bundle/lh-tags
+	url = git@github.com:LucHermitte/lh-tags.git
+[submodule "vim/bundle/lh-dev"]
+	path = vim/bundle/lh-dev
+	url = git@github.com:LucHermitte/lh-dev.git
+[submodule "vim/bundle/lh-brackets"]
+	path = vim/bundle/lh-brackets
+	url = git@github.com:LucHermitte/lh-brackets.git
+[submodule "vim/bundle/searchInRuntime"]
+	path = vim/bundle/searchInRuntime
+	url = git@github.com:LucHermitte/searchInRuntime.git
+[submodule "vim/bundle/mu-template"]
+	path = vim/bundle/mu-template
+	url = git@github.com:LucHermitte/mu-template.git
+[submodule "vim/bundle/stakeholders_vim"]
+	path = vim/bundle/stakeholders_vim
+	url = git@github.com:tomtom/stakeholders_vim.git
+[submodule "vim/bundle/alternate-lite"]
+	path = vim/bundle/alternate-lite
+	url = git@github.com:LucHermitte/alternate-lite.git
+[submodule "vim/bundle/lh-cpp"]
+	path = vim/bundle/lh-cpp
+	url = git@github.com:LucHermitte/lh-cpp.git
+[submodule "vim/bundle/lh-style"]
+	path = vim/bundle/lh-style
+	url = https://github.com/LucHermitte/lh-style.git

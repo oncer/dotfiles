@@ -86,3 +86,8 @@ key[PageDown]=${terminfo[knp]}
 [[ -n "${key[Left]}"    ]]  && bindkey  "${key[Left]}"    backward-char
 [[ -n "${key[Right]}"   ]]  && bindkey  "${key[Right]}"   forward-char
 
+alias px=/d/Projekte/Personal/castle2
+
+eval $(dircolors ~/.config/dircolors)
+xrdb ~/.Xresources
+
