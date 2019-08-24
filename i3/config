@@ -65,7 +65,6 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-
 # split in horizontal orientation
 bindsym $mod+z split h
 
@@ -115,6 +114,28 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+
+bindcode 220 workspace 1
+bindcode 143 workspace 2
+bindcode 188 workspace 3
+bindcode 192 workspace 4
+bindcode 248 workspace 5
+bindcode 159 workspace 6
+bindcode 151 workspace 7
+bindcode 171 workspace 8
+bindcode 138 workspace 9
+bindcode 135 workspace 10
+
+bindcode Shift+220 move container to workspace 1
+bindcode Shift+143 move container to workspace 2
+bindcode Shift+188 move container to workspace 3
+bindcode Shift+192 move container to workspace 4
+bindcode Shift+248 move container to workspace 5
+bindcode Shift+159 move container to workspace 6
+bindcode Shift+151 move container to workspace 7
+bindcode Shift+171 move container to workspace 8
+bindcode Shift+138 move container to workspace 9
+bindcode Shift+135 move container to workspace 10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -176,6 +197,19 @@ for_window [instance="^sun-awt-X11-XFramePeer$"] floating enable
 for_window [instance="^peek$"] floating enable
 for_window [title="^Project X$"] move container to workspace 5, workspace 5, move workspace to output DVI-D-0, floating enable
 for_window [title="^CAT Animation Editor.*$"] move container to workspace 7
+
+set $leftscreen DVI-I-1
+set $rightscreen DVI-D-0
+workspace 1 output $leftscreen
+workspace 2 output $leftscreen
+workspace 3 output $leftscreen
+workspace 4 output $leftscreen
+workspace 5 output $leftscreen
+workspace 6 output $leftscreen
+workspace 7 output $leftscreen
+workspace 8 output $rightscreen
+workspace 9 output $rightscreen
+workspace 10 output $rightscreen
 
 exec xrandr --output DVI-D-0 --rotate left --pos 1920x-400+0+0
 exec setxkbmap de

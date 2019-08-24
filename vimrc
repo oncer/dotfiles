@@ -36,7 +36,7 @@ set cinoptions=g0
 
 let g:airline#extensions#tagbar#enabled = 1
 set laststatus=2
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=0
 let g:airline_theme="wombat"
 
 " filetype specific config
@@ -55,6 +55,7 @@ let g:ycm_filetype_specific_completion_to_disable = {
 			\}
 let g:ycm_filepath_completion_use_working_dir = 1
 let g:ycm_server_python_interpreter = "/usr/bin/python"
+let g:ycm_extra_conf_globlist = [ '/d/Projekte/Personal/castle2/*' ]
 
 " CTRLP
 set wildignore+="*/build/*"
