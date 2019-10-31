@@ -91,3 +91,4 @@ alias px=/d/Projekte/Personal/castle2
 eval $(dircolors ~/.config/dircolors)
 xrdb ~/.Xresources
 
+source /usr/share/nvm/init-nvm.sh
