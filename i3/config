@@ -216,3 +216,4 @@ exec setxkbmap de
 exec compton --config ~/.config/compton.conf -b
 exec udiskie
 exec ~/.fehbg
+exec dunst
