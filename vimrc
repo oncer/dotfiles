@@ -22,6 +22,8 @@ Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tikhomirov/vim-glsl'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -61,7 +63,7 @@ set cinoptions=g0
 
 let g:airline#extensions#tagbar#enabled = 1
 set laststatus=2
-let g:airline_powerline_fonts=0
+let g:airline_powerline_fonts=1
 let g:airline_theme="wombat"
 
 " filetype specific config
