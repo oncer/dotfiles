@@ -46,9 +46,6 @@ let g:Tex_CompileRule_pdf = 'pdflatex -interaction=nonstopmode "$*"'
 let g:Tex_MultipleCompileFormats = 'dvi,pdf'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
-" Pathogen
-execute pathogen#infect()
-
 " Do not put two spaces after punctuation marks
 set nojoinspaces
 
