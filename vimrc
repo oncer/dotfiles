@@ -30,6 +30,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 set modeline
+set encoding=utf-8
 
 " Bell
 set noerrorbells visualbell t_vb=
@@ -57,6 +58,8 @@ set cinoptions=g0
 "source ~/.vim/ctags.vim
 "let generate_tags=1
 "let g:ctags_statusline=1
+"
+
 
 let g:airline#extensions#tagbar#enabled = 1
 set laststatus=2
@@ -79,7 +82,8 @@ let g:ycm_filetype_specific_completion_to_disable = {
 			\}
 let g:ycm_filepath_completion_use_working_dir = 1
 let g:ycm_server_python_interpreter = "/usr/bin/python"
-let g:ycm_extra_conf_globlist = [ '/d/Projekte/Personal/castle2/*' ]
+let g:ycm_extra_conf_globlist = [ '/d/Projekte/Personal/castle2/*',
+				\ '/c/Projects/Personal/castle2/*']
 
 " CTRLP
 set wildignore+="*/build/*"
