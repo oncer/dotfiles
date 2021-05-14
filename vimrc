@@ -84,6 +84,7 @@ let g:ycm_filepath_completion_use_working_dir = 1
 let g:ycm_server_python_interpreter = "/usr/bin/python"
 let g:ycm_extra_conf_globlist = [ '/d/Projekte/Personal/castle2/*',
 				\ '/c/Projects/Personal/castle2/*']
+let g:ycm_clangd_args = ['--clang-tidy=0']
 
 " CTRLP
 set wildignore+="*/build/*"
